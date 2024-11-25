@@ -1,0 +1,127 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Ubuntu-condensed";
+}
+
+header {
+    width: 100%;
+    background-color: white;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+    position: relative;
+}
+
+.drop-btn {
+    display: none;
+}
+
+.hr-core {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5% 6% 1.5% 6%;
+}
+
+.hr-logo {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.hr-a {
+    font-size: 22px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.hr-a::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #478AC9;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hr-a::after {
+    width: 0;
+    transition: 0.2s;
+}
+
+.hr-a:hover:after {
+    width: 100%;
+
+}
+
+section {
+    font-family: "Ubuntu-light";
+    padding: 2% 10% 2% 10%;
+    color: white; 
+}
+
+section h2 {
+    font-family: "Ubuntu-regular";
+}
+
+section a {
+    border: solid white 2px;
+    text-align: center;
+    width: 100px;
+    padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+section a:hover {
+    background-color:white;
+    color: #478AC9;
+}
+
+.sc-core {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.sc-core div {
+    width: 50%;
+
+}
+
+.sc-core img {
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+}
+
+.sc-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #478AC9;
+}
+
+.sc-content p {
+    font-size: 24px;
+}
+
+.sc-content h2 {
+    font-size: 46px;
+}
+
+.sc-content div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    gap: 10%;
+    width: 100%;
+    height: 100%;
+}
